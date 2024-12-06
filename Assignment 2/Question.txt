@@ -1,0 +1,367 @@
+Write a Java Program that checks if a given substring exists within a specified string. (For example, for the input string "hello world"; and the substring "world", the method should return true.)
+Write a Java Program that replaces all occurrences of a specified substring within a given string with another substring. (For example, for the input string "the quick brown fox jumps over the lazy dog", replace "the" with "a", resulting in "a quick brown fox jumps over a lazy dog")
+Write a Java method to find the longest common substring that appears in every row of a 2D array of strings and convert that to Upper case and print the entire string. For example, given the input:
+Input:
+Str= [ {"flower", "flow", "flight"}, {"dog", "racecar", "car"}, {"interview", "interrupt",
+"integrate", "interval"}]
+
+Output:
+Str = [ {"FLower", "FLow", "FLight"}, {"dog", "racecar", "car"}, {"INTErview",
+"INTErrupt", "INTEgrate", "INTErval"}]
+Note: (The longest common substring for the first row is "fl", for the second row there is
+none, and for the third row is "inter").
+
+4.  Write a Java recursive method to find the maximum element in an integer array.
+Sample input:
+Enter size of array: 5
+Enter array elements: 56 43 22 67 41
+Sample output:
+67
+
+
+
+5. Write a Java recursive method to reverse a given string.
+Sample input:
+Enter the string: I am good
+Sample output:
+doog ma I
+
+6. Write a Java program to calculate the total dining bill in a company cafeteria. An
+individual can be either a regular employee or a guest. The per day dining rate for
+vegetarian meals is 100 and for non-vegetarian meals is 120. Guests need to pay an
+additional 10% of the total price as a service fee. Create a class to represent the
+individual and include methods to calculate the total dining bill based on the provided
+input details. Assume that the name of an employee or guest consists of a single word.
+
+
+Sample Input and Output
+Enter name: Rohith
+Are you a guest? (yes/no): yes
+Are you vegetarian? (yes/no): no
+Enter the number of days: 20
+Total bill for Rohith is: 2640.0
+Enter name: hari
+Are you a guest? (yes/no): no
+Are you vegetarian? (yes/no): yes
+Enter the number of days: 10
+Total bill for hari is: 1000.0
+
+
+7. Write a Java program to simulate a simple banking system. Create an Account class
+that includes methods for depositing and withdrawing money from an account. Each
+account should have an account number, account holder&#39;s name, and a balance.
+Implement the following functionalities:
+Create a new account.
+Deposit money into an account.
+Withdraw money from an account.
+Check the balance of an account.
+
+
+Create a main class BankingSystem to demonstrate the functionality of the banking
+system. The program should allow users to interactively create accounts, deposit money,
+withdraw money, and check balances.
+Sample Input and Output
+Banking System Menu:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Check balance
+5. Exit
+Choose an option: 1
+Enter account holder&#39;s name: anu
+Enter initial deposit amount: 100000
+Account created successfully!
+Account Number: 1001
+Account Holder: anu
+Balance: 100000.0
+Banking System Menu:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Check balance
+5. Exit
+Choose an option: 2
+Enter account number: 1001
+Enter deposit amount: 5000
+Successfully deposited 5000.0
+Updated account details:
+Account Number: 1001
+Account Holder: anu
+Balance: 105000.0
+Banking System Menu:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Check balance
+5. Exit
+Choose an option: 3
+Enter account number: 1001
+Enter withdrawal amount: 10000
+
+
+Successfully withdrew $10000.0
+Updated account details:
+Account Number: 1001
+Account Holder: anu
+Balance: 95000.0
+Banking System Menu:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Check balance
+5. Exit
+Choose an option: 4
+Enter account number: 1001
+Account Number: 1001
+Account Holder: anu
+Balance: 95000.0
+Banking System Menu:
+1. Create a new account
+2. Deposit money
+3. Withdraw money
+4. Check balance
+5. Exit
+Choose an option: 5
+Exiting the banking system. Goodbye!
+
+
+8. Write a Java program to create student objects and assign each student to a teacher.
+The program should sort the students by height in ascending order and display their
+details along with their assigned teacher. Additionally, provide an option to print all
+student names and their teachers. Create a Student class with data members:
+rollNumber, fullName, height, weight, and assignedTeacher. Also, create a Teacher
+class with data members: teacherId and teacherName.
+
+
+Sample Input and Output
+Enter the number of students to add: 3
+Enter roll number: 1
+Enter full name: anu
+Enter height: 167
+Enter weight: 58
+Available teachers:
+
+
+1. Mr. Sabu
+2. Ms. Jaya
+3. Dr. Babu
+Choose a teacher by ID: 1
+anu has been added to the student list.
+Enter roll number: 2
+Enter full name: akash
+Enter height: 176
+Enter weight: 67
+Available teachers:
+1. Mr. Sabu
+2. Ms. Jaya
+3. Dr. Babu
+Choose a teacher by ID: 3
+akash has been added to the student list.
+Enter roll number: 3
+Enter full name: amith
+Enter height: 169
+Enter weight: 64
+Available teachers:
+1. Mr. Sabu
+2. Ms. Jaya
+3. Dr. Babu
+Choose a teacher by ID: 2
+amith has been added to the student list.
+All students sorted by height:
+Roll Number: 1
+Full Name: anu
+Height: 167.0
+Weight: 58.0
+Assigned Teacher: Mr. Sabu
+Roll Number: 3
+Full Name: amith
+Height: 169.0
+Weight: 64.0
+Assigned Teacher: Ms. Jaya
+Roll Number: 2
+Full Name: akash
+Height: 176.0
+Weight: 67.0
+Assigned Teacher: Dr. Babu
+
+
+Student Names and their Assigned Teachers:
+anu - Mr. Sabu
+amith - Ms. Jaya
+akash - Dr. Babu
+
+9. Modify the above program to use ArrayList.
+
+10.  Write a Java program to develop a small library management system for a local library. Your task is to implement a feature that tracks and manages the books in the library using an ArrayList. Each book has a title, an author, and a unique identifier (ID). The library should be able to perform the following operations:
+addBook(): Add a new book to the library.
+
+removeBook(): Remove a book from the library based on its ID.
+
+listAllBook(): Display all the books currently in the library.
+
+findBook(): Search for a book by its title and display its details.
+
+exit(): Exit from the program
+
+Create a Book class with the following attributes:
+
+id(unique identifier, integer)
+
+title(string)
+
+author (String)
+
+Create a Library class that uses an ArrayList<Book> to manage the collection of books. Implement methods for the operations mentioned above.
+
+Input/Output Format:
+
+Select the operation:
+
+1
+
+Enter the Book  id, title, author 
+
+1, Java programming, ABC
+
+Select the operation:
+
+3
+
+Java programming
+
+Select the operation:
+
+1
+
+Enter the Book  id, title, author 
+
+2, Operating System, DEF
+
+Select the operation:
+
+2
+
+Enter the id:
+
+1
+
+Select the operation:
+
+3
+
+Operating System
+
+Select the operation:
+
+4
+
+Enter the title:
+
+Operating System
+
+2, Operating System, DEF
+
+Select the operation:
+
+5
+
+
+11.  Write a java program to manage a list of unique employee IDs which utilizes a HashSet to ensure that each employee ID is unique and to provide functionalities to add, remove, and display all employee IDs. Employee Manager should be able to perform the following operations:
+
+addEmployeeId(): Uses HashSet's add method which returns true if the ID was added successfully and false if it was a duplicate.
+
+removeEmployeeId(): Uses HashSet's remove method which returns true if the ID was successfully removed and false if it did not exist.
+
+displayEmployeeIds(): Iterates through the HashSet to print each ID. It also handles the case when the set is empty.
+
+exit( ): Exit from the program
+
+      In the main method, create an instance of your EmployeeManager class and demonstrate the use of the methods by performing the following operation which is mentioned above.
+
+
+Input/Output Format:
+
+Select the operation:
+
+1
+
+Enter the id
+
+223
+
+Select the operation:
+
+1
+
+342
+
+Select the operation:
+
+3
+
+223
+
+342
+
+Select the operation:
+
+2
+
+223
+
+Select the operation:
+
+3
+
+342
+
+Select the operation:
+
+4
+
+
+12. Write a java program to implement a Task Manager which uses a priority queue to manage a collection of tasks, each with a priority level. Task Manager should be able to perform the following operations:
+
+addTask(): add tasks to the priority queue.
+
+processTask(): process task will process the task and remove task based on their priority.
+
+displayTask(): display the current task in the queue.
+
+exit( ): exit from the program
+
+   In the main method, create an instance of your TaskManager class and demonstrate the use of the methods by performing the following operation which is mentioned above.
+
+
+Input/Output Format:
+
+Select the operation:
+
+1
+
+Add Task with their priority and description
+
+1, Meeting at 2pm
+
+Select the operation:
+
+1
+
+Add Task with their priority and description
+
+2, Buy groceries
+
+Select the operation:
+
+2
+
+Select the operation:
+
+3
+
+Buy groceries
+
+Select the operation:
+
+4
+

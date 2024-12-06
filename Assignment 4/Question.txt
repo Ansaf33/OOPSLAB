@@ -1,0 +1,209 @@
+Create a simple inventory management system using generics and inheritance. You need to implement a generic class Inventory<T> where T is a subtype of a base class Product. The Inventory class should manage a collection of products and provide the following functionalities:
+
+addProduct(T product): Adds a product to the inventory.
+
+removeProduct(T product): Removes a product from the inventory.
+
+listProducts(): Lists all products in the inventory.   \
+
+Create a base class Product with a name property, and two subclasses Electronics and Clothing, where Electronics has an additional warrantyPeriod property, and Clothing has an additional size property.
+
+____________________________________________________________________________________________
+
+2.  Design and implement a generic class HierarchicalManager<T> where T is a subtype of a base class Entity. This class should manage a hierarchical collection of entities. The HierarchicalManager should support the following operations:
+
+addEntity(T entity): Adds an entity to the collection.
+
+removeEntity(T entity): Removes an entity from the collection.
+
+getAllEntities(): Returns a list of all entities in the collection.
+
+getEntitiesByType(Class<? extends T> type): Returns a list of entities that are instances of the specified subclass type.
+
+printHierarchy(): Prints out all entities and their type information.
+
+             Create a base class Entity and two subclasses Employee and Manager where   Manager extends Employee. Implement the HierarchicalManager class to manage entities of these types.
+
+__________________________________________________________________________________________
+
+3. Create an Employee management system that handles different types of Employees such as Analysts and salespersons in a company.The system should be designed to manage common employee details like name, salary, and age, while also allowing specific details for each type of employee, such as specialization for Analysts and region for Salespersons.Additionally, the system should include a static attribute and a static method to track and manage the number of employees in the company.
+
+
+
+Input:
+
+Creating Employee Instances:
+
+An Employee instance is created with specific attributes like name, salary, and age.
+
+An Analyst instance is created with attributes like name, salary, age, and specialization.
+
+A Salesperson instance is created with attributes like name, salary, age, and region.
+
+Operations:
+
+Display the information of the Employee, Analyst, and Salesperson instances.
+
+Raise the salary for each instance.
+
+Display the updated information after raising the salary.
+
+Retrieve and display the total number of employees using the static method getEmployeeCount().
+
+Sample output
+
+
+Employee Info:
+
+Name: John
+
+Age: 30
+
+Salary: 50000.0
+
+
+Analyst Info:
+
+Name: Alice 
+
+Age: 28
+
+Salary: 60000.0
+
+Specialization: Data Analysis
+
+
+Salesperson Info:
+
+Name: Bob 
+
+Age: 32
+
+Salary: 45000.0
+
+Region: Northwest
+
+
+After Raise in Employee Info:
+
+Name: John 
+
+Age: 30
+
+Salary: 60000.0
+
+
+After Raise in Analyst Info:
+
+Name: Alice
+
+Age: 28
+
+Salary: 72000.0
+
+Specialization: Data Analysis
+
+
+After Raise in Salesperson Info:
+
+Name: Bob 
+
+Age: 32
+
+Salary: 54000.0
+
+Region: Northwest
+
+
+Total Employees: 3
+
+
+______________________________________________________________________________________
+4. Design a library management system that models the relationship between Library, Book, and Author.The system should demonstrate the following relationships:
+An aggregation (has-a) relationship between the Library and Book classes, where the library contains a collection of books, but the books can exist independently of the library.
+
+A composition (has-a) relationship between the Book and Author classes, where each book is associated with a specific author, and if the book is deleted, the associated author should also be deleted.
+
+Class Diagram
+
+
+
+
+_____________________________________________________________________________
+
+5. Consider the following class hierarchy in Java, which involves four levels of inheritance: Animal (base class), Mammal (derived class from Animal), Dog (derived class from Mammal), and Puppy (derived class from Dog). Each class has a sound() method that is overridden in the derived classes, and the super keyword is used to call the parent class's sound() method. The ‘this’ keyword is used within the constructors to initialize the object's attributes.   Each class’s constructors used super keyword to call its base class constructor and use this keyword to initialize its own attributes. Each class’s sound method prints message ‘(class name) sound called’ and also prints its attribute value.
+
+Attributes in each class:
+
+Animal: Name(String)
+
+Mammal: Age(Int)
+
+Dog: Breed(String)
+
+Puppy: NickName(String)
+
+Task: Create an instance of the Puppy class in your main() method and invoke the sound() method.
+
+Sample Output:
+
+Animal sound called
+
+Name: Buddy
+
+Mammal sound called
+
+Age: 4
+
+Dog sound called
+
+Breed: Golden Retriever
+
+Puppy sound called
+
+NickName: Say
+
+________________________________________________________________________________________
+6. Given the following multi-level class hierarchy in Java:
+
+Level 1: Vehicle (Base class)
+
+Level 2: Car (Inherits from Vehicle)
+
+Level 3: ElectricCar (Inherits from Car)
+
+Level 4: Tesla (Inherits from ElectricCar)
+
+Each class has a method start() that is overridden in the derived classes, with the derived classes adding additional functionality. The super keyword is used to invoke the start() method of the parent class within each overridden method. The this keyword is used within constructors to initialize class-specific attributes.
+
+Task 1: Implement this class hierarchy in Java. The Vehicle class should have a general start() method, which is then overridden by each subclass to add more specific functionality (e.g., starting a Car, an ElectricCar, and a Tesla).
+
+Task 2: In the main() method, create an instance of the Tesla class and call the start() method.
+
+____________________________________________________________________________________
+
+7.  Consider a scenario where you have a base class called Employee, and two derived classes called Manager and Developer. The Manager class should have an additional attribute called departmentName, and the Developer class should have an additional attribute called programmingLanguage.
+
+Define the Employee class with attributes name and salary, and include a method displayDetails() that prints the details of the employee.
+
+Define the Manager class that extends the Employee class, and include the departmentName attribute. Override the displayDetails() method to include the department name.
+
+Define the Developer class that extends the Employee class, and include the programmingLanguage attribute. Override the displayDetails() method to include the programming language.
+
+Create instances of Manager and Developer, and demonstrate the use of the displayDetails() method.
+
+
+
+
+___________________________________________________________________________________________
+
+8. Consider a scenario where you need to model a Library system. The library contains multiple Books. Each book has an author, title, and publication year. The library can exist without books, and books can exist independently of the library. Model this scenario using the appropriate relationships (aggregation or composition).
+
+Define a Book class with attributes title, author, and year.
+
+Define a Library class that has a collection of Book objects.
+
+Implement methods in the Library class to add and remove books, and to display all the books in the library.
+
+Illustrate the difference between aggregation and composition by explaining whether the Library has an aggregation or composition relationship with Book.
+

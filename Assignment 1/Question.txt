@@ -1,0 +1,19 @@
+Write a Java program to find the factorial of a given number.
+
+Write a Java program to implement a simple version of a binary search algorithm.
+
+Write a Java program to read the name and roll number of ‘n’ students and sort the list based on roll number.
+
+Write a Java program to check if a vowel is present in a string.
+
+You are developing a Java application for a text processing tool. One of the features of this tool is the ability to reverse any given string input by the user. Your task is to implement this feature.
+
+Write a java program to create a fibonacci series.
+
+Write a java program to Menu driven program using switch statement ( Find addition, subtraction, multiplication and division of to integer numbers ).
+
+Write a java program to implement the transpose of a 2-d matrix. Let A[][] be a matrix, find the transpose of A[][] and store the result in B[][].
+
+Write a java program to find the frequency of each character in the word.
+
+Create a Java program that swaps two strings without using a third variable.
